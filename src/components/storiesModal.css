@@ -1,0 +1,89 @@
+.modal{
+  
+}
+
+
+
+.modal-content {
+     background-color: transparent !important;
+    
+
+}
+
+.modal-content h1{
+    
+}
+.story{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 95%;
+    height: 90vh;
+    
+}
+#image{
+    width: 600px;
+    height: 700px;
+    margin: 0px;
+    padding: 0;
+    align-self: center;
+    border-radius: 5px;
+
+    
+}
+
+.story p{
+    
+    font-family: cursive;
+    color: white;
+    font-size: 30px;
+}
+
+#closeButton{
+    width: 0;
+    font-family: cursive;
+    color: white;
+    font-size: 40px;
+    font-weight: 1000;
+    background-color: transparent;
+    border: none;
+    
+}
+
+@media screen and (max-width: 740px) {
+    
+    .modal{
+        width: 100%;
+       
+        background-color: black;
+    }
+
+    .story{
+        display: flex;
+        
+        justify-content: space-between;
+        
+        flex-flow: row;
+        flex-wrap: wrap;
+        width: 95%;
+        height: 800px;
+        
+        
+        
+    }
+    
+    #image{
+        width: 90%;
+        height: 600px;
+        margin: 0px;
+        
+    }
+    .modal-content{
+        
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-flow: row;
+    }
+}

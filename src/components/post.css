@@ -1,0 +1,133 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgba(var(--i1d,38,38,38),1);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+.post{
+    width: 100%;
+    max-width: 600px;
+    height: 845px;
+    background-color: rgba(var(--d87,255,255,255),1);
+    margin-left: -1px;
+    margin-right: -1px;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    border-radius: 3px;
+    margin-bottom: 24px;
+    margin-top: 24px;
+    display: flex;
+    
+    flex-direction: column;
+    box-sizing: content-box;
+}
+
+#postHeader{
+    width: 100%;
+    max-width: 600px;
+    height: 60px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+
+}
+
+#postHeader p{
+    font-size: medium;
+    color: black;
+    margin-right: 3px;
+    
+    
+
+
+}
+
+.profilePicture{
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    padding: 2px;
+    box-sizing: border-box;
+    align-items: center;
+    
+
+}
+
+#postImage{
+    width: 100%;
+    max-width: 600px;
+    height: 600px;
+    margin: 0px;
+    padding: 0;
+    
+}
+
+#likes{
+    width: 100%;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.post button{
+    background-color: transparent;
+    border: none;
+}
+.post p{
+    
+    padding: 10px;
+    box-sizing: border-box;
+    color: black;
+    font-size: medium;
+
+}
+.comment{
+    width: 100%;
+    height: 62px;
+    box-sizing: border-box;
+    color: black;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.addComment{
+    width: 100%;
+    height: 55px;
+    background-color:transparent ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid  rgba(var(--bb2,239,239,239),1);;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+.addComment svg {
+    width: 27px ;
+    height: 24px ;
+    margin-right: 10px;
+    box-sizing: border-box;
+    
+}
+
+.addComment input{
+    width: 100%;
+    border-color: transparent;
+    background-color: transparent;
+    outline: transparent;
+    color: rgba(var(--i1d,38,38,38),1);
+    
+    font-size: 15px;
+}
+.addComment button{
+    color: #0095f6;
+
+}
