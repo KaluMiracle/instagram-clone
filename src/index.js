@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './components/App';
+import App from './App';
 import DashBoardApp from './components/DashBoard';
 import reportWebVitals from './reportWebVitals';
 import { Switch, 
@@ -9,22 +9,8 @@ import { Switch,
 
 ReactDOM.render(
   <React.StrictMode>
-    <>
-    <BrowserRouter>
-
-     
-      <Routes>
-
-        <Route path="/" element={<App/>}/>
-        <Route exact path="dashboard" element={<DashBoardApp/>} />
-        
-        
-        
-      </Routes>  
-      
-    </BrowserRouter>
+    <App/>
     
-    </>
     
   </React.StrictMode>,
   
