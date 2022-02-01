@@ -1,12 +1,10 @@
 
 import './App.css';
-import fbLogo from './components/images/fbLogo.png'
+import fbLogo from './images/fbLogo.png'
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
-import DashBoardApp from './components/DashBoard';
-import { Switch, 
-  Route, Redirect, BrowserRouter, Routes,} from "react-router-dom";
+
 function Slider(){
 
   
@@ -190,7 +188,9 @@ function Footer(){
   )
 }
 
-function LandingPage(){
+
+function App() {
+  
   return (
     <div id='root'>
       <Slider />
@@ -199,21 +199,6 @@ function LandingPage(){
     </div>
    
   );
-}
-
-function App() {
-  return (
-    <BrowserRouter>
-
-      <Routes>
-
-        <Route path="/" element={<LandingPage/>}/>
-        <Route exact path="dashboard" element={<DashBoardApp/>} />
-        
-      </Routes>  
-    
-    </BrowserRouter>
-  )
 }
 
 export default App
