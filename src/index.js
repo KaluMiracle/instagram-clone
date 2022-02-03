@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './components/App';
-import DashBoardApp from './components/DashBoard';
+import App from './pages/App';
+import DashBoardApp from './pages/Dashboard';
 import reportWebVitals from './reportWebVitals';
 import { Switch, 
   Route, Redirect, BrowserRouter, Routes,} from "react-router-dom";

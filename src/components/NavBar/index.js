@@ -1,13 +1,16 @@
 import { useReducer } from "react";
 import React from "react";
-import Logo from "./images/logo.png";
-import "./navBar.css";
+
+import Logo from "../../assets/images/logo.png";
+import navBar from  "./navBar.module.css";
 
 function NavBar({ user }) {
   let searchIcon = null;
+
   React.useEffect(() => {
     searchIcon = document.getElementById("searchIcon");
   });
+
   const [inputValue, setInputValue] = React.useState("");
   const inputRef = React.useRef();
 
@@ -15,6 +18,7 @@ function NavBar({ user }) {
     key: "search",
     path: "M19 10.5A8.5 8.5 0 1110.5 2a8.5 8.5 0 018.5 8.5z",
   };
+
 
   function SearchBar() {
     const removeSearchIcon = () => {
@@ -30,8 +34,9 @@ function NavBar({ user }) {
     };
 
     return (
-      <div id='searchBar'>
-        <svg id='searchIcon'>
+
+      <div className={navBar.searchBar}>
+        <svg className={navBar.searchIcon}>
           <path d={searchSvg.path} fill='none' stroke='grey' />
           <line
             fill='none'
@@ -53,12 +58,12 @@ function NavBar({ user }) {
   }
 
   return (
-    <nav id='navBar'>
-      <div id='navBarDiv'>
-        <img id='instagramImage' alt='Instagram' src={Logo} />
+    <nav className={navBar.navBar}>
+      <div className={navBar.navBarDiv}>
+        <img className={navBar.instagramImage} alt='Instagram' src={Logo} />
         <SearchBar />
 
-        <div id='navOptions'>
+        <div className={navBar.navOptions}>
           <a>
             <svg
               aria-label='Home'

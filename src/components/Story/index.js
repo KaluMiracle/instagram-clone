@@ -1,5 +1,5 @@
 import React from "react"
-import "./story.css"
+import story from  "./story.module.css"
 function Story({user, onClick}){
     const seen = React.useRef()
 
@@ -11,7 +11,7 @@ function Story({user, onClick}){
 
     return(
         <button style={{background: "transparent", border: "none"}} variant="primary" onClick={removeBorder}>
-            <li id='story'>
+            <li className={story.story}>
                 <div ref={seen}>
                     <img alt = "user.key" src={user.image}/> 
                 </div>

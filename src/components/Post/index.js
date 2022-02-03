@@ -1,5 +1,7 @@
-import React from "react";
-import "./post.css";
+
+import React from "react"
+import post from "./post.module.css"
+
 
 function Post({ user }) {
   const [likes, setLikes] = React.useState(2);
@@ -11,7 +13,7 @@ function Post({ user }) {
 
   function AddComment() {
     return (
-      <form className='addComment'>
+      <form className={post.addComment}>
         <svg
           aria-label='Emoji'
           color='#262626'
@@ -28,10 +30,11 @@ function Post({ user }) {
     );
   }
 
+
   return (
     <>
-      <article role='presentation' className='post'>
-        <header id='postHeader'>
+    <article role='presentation' className={post.post}>
+        <header className={post.postHeader}>
           <div
             style={{ display: "flex", alignItems: "center" }}
             role={"button"}>
@@ -42,7 +45,7 @@ function Post({ user }) {
                 border: "2px solid rgba(252,70,107,1)",
                 borderRadius: "50%",
               }}>
-              <img className='profilePicture' alt='rihanna' src={user.image} />
+              <img className={post.profilePicture} alt='rihanna' src={user.image} />
             </div>
             <p style={{ fontWeight: 600 }}>{user.username}</p>
           </div>
@@ -61,11 +64,11 @@ function Post({ user }) {
           </svg>
         </header>
 
-        <div id='postImage'>
-          <img alt='userImage' src={user.image} />
-        </div>
+        
+        <img className = {post.postImage} alt='userImage' src={user.image} />
 
-        <div id='likes'>
+
+        <div className={post.likes}>
           <div
             style={{
               display: "flex",
@@ -161,4 +164,4 @@ function Post({ user }) {
   );
 }
 
-export default Post;
+export default Post
