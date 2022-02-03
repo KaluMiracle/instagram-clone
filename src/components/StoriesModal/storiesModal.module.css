@@ -10,9 +10,7 @@
 
 }
 
-.modal-content h1{
-    
-}
+
 .story{
     display: flex;
     justify-content: space-around;
@@ -22,7 +20,7 @@
     height: 90vh;
     
 }
-#image{
+.image{
     width: 600px;
     height: 700px;
     margin: 0px;
@@ -40,7 +38,7 @@
     font-size: 30px;
 }
 
-#closeButton{
+.closeButton{
     width: 0;
     font-family: cursive;
     color: white;
@@ -73,7 +71,7 @@
         
     }
     
-    #image{
+    .image{
         width: 90%;
         height: 600px;
         margin: 0px;

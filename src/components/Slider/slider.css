@@ -1,0 +1,28 @@
+.slider{
+    display: none;
+    align-self: center;
+    background-image: url(https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png);
+    background-position: 0 0;
+    background-size: 454px 618px;
+    flex-basis: 454px;
+    height: 618px;
+    margin-left: -35px;
+    margin-right: -15px;
+    justify-content: flex-end;
+    align-items: center;
+    }
+
+    .slide{
+    height: 427px;
+    width: 240px;
+    margin-right: 63px;
+    margin-top: 5px;
+}
+
+@media  screen and (min-width: 865px){
+    .slider{
+        display: flex ;
+        
+    }
+
+}

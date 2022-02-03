@@ -1,20 +1,16 @@
 
-.dashboard2{
-    
-    
+.dashboard{  
     width: 300px;
     height: 100%;
-    display: "flex";
-    
+    display: "flex";  
     background-color: transparent;
     justify-content: flex-start;
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
 
 
 
-.dashboard2 button{
+.dashboard button{
     color: #0095f6;
     border: none;
     background-color: transparent;
@@ -24,7 +20,7 @@
 }
 
 @media screen and (max-width: 1000px){
-    .dashboard2{
+    .dashboard{
         display: none;
     }
 }
