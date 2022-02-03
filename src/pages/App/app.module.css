@@ -6,7 +6,7 @@
 a{
   text-decoration: none;
 }
-#root{
+.appRoot{
   width: 100%;
   height: 100vh;
   background: rgba(var(--b3f,250,250,250),1);
@@ -42,7 +42,7 @@ a{
 
 
 
-#instagram{
+.instagram{
   width: 100%;
   font-family: cursive;
   text-align: center;
@@ -85,7 +85,7 @@ a{
 
 }
 
-#or{
+.or{
   width: 80%;
   height: 30px ;
   display: flex;
@@ -100,13 +100,13 @@ a{
   background:rgba(var(--b38,219,219,219),1);
 }
 
-#orText{
+.orText{
   padding: 10px;
   font-size: 13px;
   font-weight: 600;
 }
 
-#fbLogin{
+.fbLogin{
   width: 80%;
   display: flex;
   align-items: center;
@@ -116,26 +116,26 @@ a{
 
 
 
-#fbLogin img{
+.fbLogin img{
   width: 20px;
   height: 20px;
   margin-right: 5px;
 }
 
-#forgotPassword{
+.forgotPassword{
   width: 80%;
   display: flex;
   justify-content: center;
   margin-top: 10px;
 
 }
-#forgotPassword p{
+.forgotPassword p{
   color: #385185;
   font-size: smaller;
 }
 
 
-#signUp{
+.signUp{
   width: 350px;
   height: 60px;
   margin-top: 20px;
@@ -146,11 +146,11 @@ a{
   border: 1px solid rgba(var(--b6a,219,219,219),1);
 }
 
-#signUp p{
+.signUp p{
   font-family: cursive;
 }
 
-#getTheApp{
+.getTheApp{
   width: 350px;
   margin-top: 20px;
   display: flex;
@@ -158,14 +158,14 @@ a{
   justify-content: center;
 }
 
-#getTheApp p{
+.getTheApp p{
   text-align: center;
   width: 100%;
   color: rgba(var(--i1d,38,38,38),1);
   margin-bottom: 10px;
 }
 
-#getTheApp img {
+.getTheApp img {
   width: 135px;
   height: 40px;
   border-radius: 2px;
@@ -174,54 +174,7 @@ a{
 
 
 
-#footer{
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-#footer div{
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-#footer a,p{
-  color: rgba(var(--f52,142,142,142),1);
-  text-decoration: none;
-  font-size: smaller;
-  padding: 7px;
-  box-sizing: border-box;
-}
-
-#slider{
-  display: none;
-  align-self: center;
-  background-image: url(https://www.instagram.com/static/images/homepage/home-phones.png/43cc71bb1b43.png);
-  background-position: 0 0;
-  background-size: 454px 618px;
-  width: 454px;
-  height: 618px;
-  margin-left: -35px;
-  margin-right: -15px;
-  justify-content: flex-end;
-  align-items: center;
-  
-}
-
-.slide{
-  height: 427px;
-  width: 240px;
-  margin-right: 63px;
-  margin-top: 5px;
-}
 
 
-@media  screen and (min-width: 865px){
-  #slider{
-      display: flex ;
-      
-  }
-  
-}
+
+

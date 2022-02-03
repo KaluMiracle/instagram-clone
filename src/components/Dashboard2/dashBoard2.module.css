@@ -1,0 +1,54 @@
+.dashboard2 {
+  width: 300px;
+  height: 100%;
+  display: "flex";
+
+<<<<<<< HEAD:src/components/dashBoard2.css
+  background-color: transparent;
+  justify-content: flex-start;
+  flex-direction: column;
+  /* position: -webkit-sticky;
+  position: sticky; */
+  position: fixed;
+  right: 17.5%; /* 65% width has 35%/2 -> 17.5% sides */
+}
+
+.dashboard2 button {
+  color: #0095f6;
+  border: none;
+  background-color: transparent;
+  font-size: 12px;
+  font-weight: 600px;
+}
+
+@media screen and (max-width: 1000px) {
+  .dashboard2 {
+    display: none;
+  }
+=======
+.dashboard{  
+    width: 300px;
+    height: 100%;
+    display: "flex";  
+    background-color: transparent;
+    justify-content: flex-start;
+    flex-direction: column; 
+}
+
+
+
+.dashboard button{
+    color: #0095f6;
+    border: none;
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: 600px;
+
+}
+
+@media screen and (max-width: 1000px){
+    .dashboard{
+        display: none;
+    }
+>>>>>>> features/miracle:src/components/Dashboard2/dashBoard2.module.css
+}

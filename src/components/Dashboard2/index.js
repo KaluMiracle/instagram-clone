@@ -1,5 +1,5 @@
 import React from "react"
-import "./dashBoard2.css"
+import dashboard from "./dashBoard2.module.css"
 
 
 
@@ -28,7 +28,7 @@ function DashBoard2({user, users}){
 
 
     return(
-        <div className='dashboard2' role={"button"}>
+        <div className={dashboard.dashboard} role={"button"}>
             <ProfileLink user={user} imageSize={60}></ProfileLink>
 
             <div style={{display: "flex" ,justifyContent: "space-between", marginBottom: "10px",  marginTop: "20px"}}>
