@@ -1,6 +1,8 @@
 p {
   padding: 0;
 }
+
+
 .dashBoardRoot{
     width: 100%;
     height: 100vh;
@@ -50,9 +52,7 @@ p {
 }
 
 @media screen and (max-width: 740px){
-
     .dashBoardRoot{
         margin-top: 55px;
     }
 }
-

@@ -1,24 +1,26 @@
 import { useReducer } from "react";
 import React from "react";
 
-import Logo from "../../assets/images/logo.png";
-import navBar from  "./navBar.module.css";
+import Logo from "../../assets/images/logo.png"
+import navBar from  "./navBar.module.css"
 
-function NavBar({ user }) {
-  let searchIcon = null;
+function NavBar({user}){
 
-  React.useEffect(() => {
-    searchIcon = document.getElementById("searchIcon");
-  });
+    let searchIcon = null
+    
+    React.useEffect(()=>{
+            searchIcon = document.getElementById("searchIcon")
+    })
+    const [inputValue, setInputValue] = React.useState("");
+    const inputRef = React.useRef()
 
-  const [inputValue, setInputValue] = React.useState("");
-  const inputRef = React.useRef();
+    
+    
 
-  const searchSvg = {
-    key: "search",
-    path: "M19 10.5A8.5 8.5 0 1110.5 2a8.5 8.5 0 018.5 8.5z",
-  };
-
+    const searchSvg = {
+      key: "search", 
+      path: "M19 10.5A8.5 8.5 0 1110.5 2a8.5 8.5 0 018.5 8.5z" 
+   }
 
   function SearchBar() {
     const removeSearchIcon = () => {
@@ -34,9 +36,9 @@ function NavBar({ user }) {
     };
 
     return (
-
       <div className={navBar.searchBar}>
         <svg className={navBar.searchIcon}>
+
           <path d={searchSvg.path} fill='none' stroke='grey' />
           <line
             fill='none'
