@@ -30,7 +30,7 @@ function Post({ user }) {
                     <div 
                         style={{width: "37px", height: "37px", border: "2px solid rgba(252,70,107,1)",borderRadius: "50%"}} 
                     >
-                        <img className={post.profilePicture} alt='rihanna' src={user.image}/>
+                        <img quality="100" className={post.profilePicture} alt='rihanna' src={user.image}/>
                                                 
                     </div>
                     <p style={{fontWeight: 600}}>{user.username}</p>
