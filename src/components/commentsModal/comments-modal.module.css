@@ -1,0 +1,143 @@
+
+
+.commentsModal{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0.0, 0.0, 0.0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    
+}
+
+.container{
+    width: 70%;
+    max-width: 1000px;
+    height: 600px;
+    background: white;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+
+}
+.image{
+    width: 70%;
+    height: 100%;
+}
+
+.container2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(var(--bb2, 239, 239, 239), 1);
+
+}
+.detailsContainer{
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+
+.detailsContainer p{
+    font-size: medium;
+    color: black;
+    margin-right: 3px;
+
+}
+
+.profilePicture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 2px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.commentsContainer{
+    width: 100%;
+    height: 70%;
+    border: 1px solid rgba(var(--bb2, 239, 239, 239), 1);
+
+}
+
+.likes{
+    width: 100%;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+    padding: 20px 10px;
+}
+.likes button{
+    background-color: transparent;
+    border: none;
+}
+.likes p{
+    
+    padding: 10px;
+    box-sizing: border-box;
+    color: black;
+    font-size: medium;
+    margin: 0 10px;
+
+}
+
+.addComment {
+  width: 100%;
+  height: 55px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgba(var(--bb2, 239, 239, 239), 1);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.addComment svg {
+  width: 27px;
+  height: 24px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+.addComment input {
+  width: 100%;
+  border-color: transparent;
+  background-color: transparent;
+  outline: transparent;
+  color: rgba(var(--i1d, 38, 38, 38), 1);
+
+  font-size: 15px;
+}
+.addComment button {
+  color: #0095f6;
+  background: transparent;
+  border: none;
+}
+
+
+.closeButton{
+    width: 0;
+    font-family: cursive;
+    color: white;
+    font-size: 40px;
+    font-weight: 1000;
+    background-color: transparebnt;
+    border: none;
+    margin-right: 40px;
+    align-self: end;
+}
