@@ -1,5 +1,5 @@
 
-import dashboard from './dashBoard.module.css';
+import styles from './dashBoard.module.css';
 import React from 'react';
 
 
@@ -19,6 +19,7 @@ import NavBar from '../../components/NavBar';
 import Post from '../../components/Post';
 import DashBoard2 from '../../components/Dashboard2';
 
+import CommentsModal from '../../components/commentsModal';
 
 
 function DashBoardApp(){
@@ -93,7 +94,7 @@ function DashBoardApp(){
         return(
             <>
 
-                <ul  className={dashboard.storiesDiv}>
+                <ul  className={styles.storiesDiv}>
 
                     {users.map(user=>
                         {  
@@ -128,19 +129,21 @@ function DashBoardApp(){
 
     function NewsFeed(){
 
-        const [modalShow, setModalShow] = React.useState(false);
-
+        const [user, setUser] = React.useState(users[0]);
         
 
         return(
             
-            <div className={dashboard.newsFeed} >
+            <div className={styles.newsFeed} >
                 <Stories />
                 {users.map(user =>{
                     return <Post user= {user} key={user.key} />
                 })}
                 
+                
             </div>
+
+            
         )
 
     }
@@ -154,12 +157,18 @@ function DashBoardApp(){
 
         <>
 
-            <div className = {dashboard.dashBoardRoot}>
+            <div className = {styles.dashBoardRoot}>
+                <head>
+                    <title>Instagram</title>
+                </head>
+                <div className={styles.container}>
+                    <NavBar user={users[0]} />
+                    
+                    <NewsFeed/>
+                    <DashBoard2  user= {users[0]} users={users}/>
+                </div>
                 
-                <NavBar user={users[0]} />
                 
-                <NewsFeed/>
-                <DashBoard2 user= {users[0]} users={users}/>
                
             </div>
 

@@ -6,6 +6,10 @@
     background-color: transparent;
     justify-content: flex-start;
     flex-direction: column; 
+
+    position: fixed;
+    left: 60%;
+
 }
 
 
@@ -19,7 +23,7 @@
 
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1300px){
     .dashboard{
         display: none;
     }

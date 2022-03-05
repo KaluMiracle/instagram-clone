@@ -1,7 +1,10 @@
 p {
   padding: 0;
 }
-
+*{
+    padding: 0;
+    margin: 0;
+}
 
 .dashBoardRoot{
     width: 100%;
@@ -12,7 +15,16 @@ p {
     justify-content: center;
     flex-direction: row;
     margin-top: 100px;
-    
+    position: relative;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    position: relative;
+    align-items: flex-start;
+    padding: 0;
 }
 
 .newsFeed{
@@ -42,17 +54,27 @@ p {
     
 }
 
+.dashboard2{
+    background-color: black;
+}
 
 
 
-@media screen and (max-width: 1000px){
-    .dashBoardRoot{
-        justify-content: center;
+
+@media screen and (min-width: 1300px){
+
+    .container{
+        margin-right: 30%;
     }
 }
 
-@media screen and (max-width: 740px){
+@media screen and (min-width: 740px){
     .dashBoardRoot{
         margin-top: 55px;
+        padding-top: 20px;
+        box-sizing: border-box;
+    }
+    .container{
+        width: auto;
     }
 }

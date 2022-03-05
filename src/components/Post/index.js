@@ -1,6 +1,6 @@
 import React from "react"
 import post from "./post.module.css"
-
+import CommentsModal from "../commentsModal";
 
 function Post({ user }) {
   const [likes, setLikes] = React.useState(2);
@@ -74,6 +74,7 @@ function Post({ user }) {
             </div>
             <AddComment/>
             
+            <CommentsModal user={user} likes= {likes} show={commentsModalShow} onHide={() => SetCommentsModalShow(false)} />
             
         </article>
         
